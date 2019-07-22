@@ -33,5 +33,5 @@ body {
 }
 
 ul {
-  list-style-image: url("/public/assets/img/burger-ul.png")
+  list-style-image: url("../img/burger-ul.png")
 }
