@@ -1,6 +1,6 @@
-<h1>burgers!</h1>
+<h1>Eat-da-Burger!</h1>
 
-<h2>burgers that are not is_eaten!</h2>
+<h2>Burgers that have not been eaten:</h2>
 
 <ul>
   {{#each burgers}}
@@ -10,7 +10,7 @@
   {{/each}}
 </ul>
 
-<h2>burgers that are is_eaten!</h2>
+<h2>Burgers that have been eaten:</h2>
 
 <ul>
   {{#each burgers}}
@@ -24,15 +24,15 @@
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">burger Name:</label>
+    <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="name">
   </div>
 
   <div class="form-group">
-    <label for="is_eaten">is_eaten?</label><br>
-    <input type="radio" name="is_eaten" value="1" checked> is_eaten!<br>
-    <input type="radio" name="is_eaten" value="0"> Awake
+    <label for="is_eaten">Have you had this burger before?</label><br>
+    <input type="radio" name="is_eaten" value="1" checked> I've eaten it!<br>
+    <input type="radio" name="is_eaten" value="0"> I have not eaten it!
   </div>
 
-  <button type="submit">Add burger</button>
+  <button type="submit">Add-da-burger!</button>
 </form>
