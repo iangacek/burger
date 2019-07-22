@@ -17,3 +17,33 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0eea6;
+}
+
+#mainJumbotron {
+  text-align: center;
+}
+
+#mainImg {
+  width: 100px;
+  margin-right: 20px;
+}
+
+ul {
+  list-style-image: url("../img/burger-ul.png")
+}
+
+h4 {
+  text-align: center;
+}
+
+#burgerSubmission {
+  text-align: center;
+}
+
+.btn-secondary {
+  padding: 1px 2px;
+}
