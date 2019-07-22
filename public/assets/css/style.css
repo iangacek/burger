@@ -26,3 +26,8 @@ body {
 #mainJumbotron {
   text-align: center;
 }
+
+#mainImg {
+  width: 100px;
+  margin-right: 20px;
+}
