@@ -2,7 +2,7 @@
 
 ### Overview
 
-This application is built using a multitude of technologies, including Handlebars, Express, ORM, Node, and SQL Databases.
+This application is built using a multitude of technologies, including Handlebars, Express, ORM, Node, and SQL Databases. Inside the application, you are able to type in the name of a burger you would like to eat, which proceeds to add the respective value to a SQL database and present it on the webpage. After clicking "Devour It!", the entry in the database will be deleted and reflected properly on the webpage.
 
 ### Organization
 
