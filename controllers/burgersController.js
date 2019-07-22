@@ -16,6 +16,7 @@ router.get("/", function(req, res) {
   });
 });
 
+// Function to add entry to SQL Database
 router.post("/api/burgers/", function(req, res) {
   burger.insertOne([
     "name", "is_eaten"
@@ -28,28 +29,11 @@ router.post("/api/burgers/", function(req, res) {
   console.log("Added");
 });
 
-router.put("/api/burgers/:id", function(req, res) {
-  var condition = "id = " + req.params.id;
-
-  console.log("condition", condition);
-
-  burger.update({
-    is_eaten: req.body.is_eaten
-  }, condition, function(result) {
-    if (result.changedRows == 0) {
-      // If no rows were changed, then the ID must not exist, so 404
-      return res.status(404).end();
-    } else {
-      res.status(200).end();
-    }
-  });
-});
-
+// Function to delete entry in SQL Database
 router.delete("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  burger.delete(condition, function(result) {
-    console.log("I tried");
+  burger.updateOne(condition, function(result) {
     if (result.affectedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();

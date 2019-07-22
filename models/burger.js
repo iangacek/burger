@@ -8,19 +8,16 @@ var burger = {
     });
   },
   // The variables cols and vals are arrays.
+  // Adds entry
   insertOne: function(cols, vals, cb) {
     orm.insertOne("burgers", cols, vals, function(res) {
       cb(res);
     });
     console.log("Added");
   },
-  update: function(vals, condition, cb) {
-    orm.update("burgers", vals, condition, function(res) {
-      cb(res);
-    });
-  },
-  delete: function(condition, cb) {
-    orm.delete("burgers", condition, function(res) {
+  // Deletes entry
+  updateOne: function(condition, cb) {
+    orm.updateOne("burgers", condition, function(res) {
       cb(res);
     });
   }
