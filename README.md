@@ -21,17 +21,17 @@ Then, navigate to `http://localhost:8080/` in your browser.
 ## Technologies included in this application:
 
 `express`
-![express](https://www.npmjs.com/package/express)
+[express](https://www.npmjs.com/package/express)
 
 `express-handlebars`
-![express-handlebars](https://www.npmjs.com/package/express-handlebars)
+[express-handlebars](https://www.npmjs.com/package/express-handlebars)
 
 `orm`
-![orm](https://www.npmjs.com/package/orm)
+[orm](https://www.npmjs.com/package/orm)
 
 `mysql`
-![mysql](https://www.npmjs.com/package/mysql)
+[mysql](https://www.npmjs.com/package/mysql)
 
 `node`
-![node](https://www.npmjs.com/package/node)
+[node](https://www.npmjs.com/package/node)
 
