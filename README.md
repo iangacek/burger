@@ -8,6 +8,10 @@ This application is built using a multitude of technologies, including Handlebar
 
 This "Eat-Da-Burger" applicaton primarily functions from the `server.js` file which is executed via node.js.
 
+## Screenshots
+
+![alt text](https://github.com/iangacek/burger/blob/master/public/assets/img/screenshot.PNG?raw=true "Eat-Da-Burger Example")
+
 ## Instructions
 
 To run the Eat-Da-Burger server, first install the proper node packages:
@@ -20,18 +24,13 @@ Then, navigate to `http://localhost:8080/` in your browser.
 
 ## Technologies included in this application:
 
-`express`
 [express](https://www.npmjs.com/package/express)
 
-`express-handlebars`
 [express-handlebars](https://www.npmjs.com/package/express-handlebars)
 
-`orm`
 [orm](https://www.npmjs.com/package/orm)
 
-`mysql`
 [mysql](https://www.npmjs.com/package/mysql)
 
-`node`
 [node](https://www.npmjs.com/package/node)
 
