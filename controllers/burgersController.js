@@ -6,8 +6,8 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
-router.get("/", function(req, res) {
-  burger.selectAll(function(data) {
+router.get("/", function (req, res) {
+  burger.selectAll(function (data) {
     var hbsObject = {
       burgers: data
     };
@@ -17,23 +17,25 @@ router.get("/", function(req, res) {
 });
 
 // Function to add entry to SQL Database
-router.post("/api/burgers/", function(req, res) {
+router.post("/api/burgers/", function (req, res) {
   burger.insertOne([
     "name", "is_eaten"
   ], [
     req.body.name, req.body.is_eaten
-  ], function(result) {
+  ], function (result) {
     // Send back the ID of the new burger
-    res.json({ id: result.insertId });
+    res.json({
+      id: result.insertId
+    });
   });
   console.log("Added");
 });
 
 // Function to delete entry in SQL Database
-router.delete("/api/burgers/:id", function(req, res) {
+router.delete("/api/burgers/:id", function (req, res) {
   var condition = "id = " + req.params.id;
 
-  burger.updateOne(condition, function(result) {
+  burger.updateOne(condition, function (result) {
     if (result.affectedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
