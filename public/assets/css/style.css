@@ -17,3 +17,8 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0eea6;
+}
